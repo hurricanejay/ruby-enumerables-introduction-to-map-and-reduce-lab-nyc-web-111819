@@ -60,3 +60,9 @@ end
 
 def reduce_any_to_true(source_array)
   i = 0
+  while i < source_array.length do
+    return true if source_array[i]
+    i += 1
+  end
+  return true
+end
